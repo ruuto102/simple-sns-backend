@@ -32,6 +32,8 @@ Create an `.env` file in the root directory of your project and add the followin
 ```env
 MONGO_INITDB_ROOT_USERNAME=your_username
 MONGO_INITDB_ROOT_PASSWORD=your_password
+KEYCLOAK_ADMIN=your_username
+KEYCLOAK_ADMIN_PASSWORD=your_password
 ```
 
 After that you can run the following command to set up the project dependencies:
