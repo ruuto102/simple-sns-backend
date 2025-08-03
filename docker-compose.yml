@@ -3,7 +3,7 @@ version: "3.8"
 services:
   mongo:
     image: mongo:latest
-    container_name: simple-sns-mongo
+    container_name: cosbum-mongo
     ports:
       - "27017:27017"
     environment:
@@ -12,6 +12,7 @@ services:
 
   keycloak:
     image: quay.io/keycloak/keycloak:26.3.2
+    container_name: cosbum-keycloak
     command: start-dev
     environment:
       KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN}
